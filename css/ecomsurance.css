@@ -1,0 +1,664 @@
+.checkout_toggle input[type="checkbox"]:checked::before{
+    content: "" !important;
+}
+input[type=checkbox].switch_swatch_checkbox_input {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #fff;
+  }
+  input[type=checkbox].switch_swatch_checkbox_input:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  input[type=checkbox].switch_swatch_checkbox_input:checked {
+    box-shadow: inset 20px 0 0 0 #4ed164;
+    border-color: #4ed164;
+  }
+  input[type=checkbox].switch_swatch_checkbox_input:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+  }
+  input[type=checkbox].switch_swatch_checkbox_input:hover, input[type=checkbox].switch_swatch_checkbox_input:focus, input[type=checkbox].switch_swatch_checkbox_input:checked {
+    background-image: none;
+    color: white;
+  }
+  
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* The Close Button */
+  .lup-modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  }
+  
+  .lup-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .lup-close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .lup-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .blast-widget.mobile-align-undefined.desktop-align-undefined {
+    justify-content: flex-end;
+  }
+  
+  .route-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    color: #69727b;
+    display: none;
+    font-family: "Titillium Web", sans-serif;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000000000;
+  }
+  .route-modal .route-modal-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    max-width: 775px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+  .route-modal .route-modal-box .background {
+    position: absolute;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  .route-modal .route-modal-box .route-line {
+    position: absolute;
+    width: 100%;
+    justify-self: center;
+    top: 50px;
+  }
+  .route-modal .route-modal-box .route-rm-close-modal {
+    cursor: pointer;
+    height: 35px;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+    align-self: flex-end;
+    padding: 5px 5px 0 0;
+  }
+  .route-modal .route-modal-box .route-modal-header {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    margin-top: 50px;
+  }
+  .route-modal .route-modal-box .route-modal-header .route-rm-secure-with {
+    color: #535353;
+    font-size: 12px;
+  }
+  .route-modal .route-modal-box .route-modal-header .route-rm-route-logo {
+    width: 180px;
+    align-items: center;
+    max-width: none;
+  }
+  .route-modal .route-modal-box .route-modal-header .route-rm-route-logo-color {
+    width: 180px;
+  }
+  .route-modal .route-modal-box .route-modal-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 450px;
+    z-index: 10;
+    margin: 60px 0 0px;
+    align-self: end;
+    justify-self: center;
+    width: 775px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 {
+    vertical-align: text-top;
+    width: 224px;
+    height: 295px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+    grid-row: modalCTop-s/modalCTop-e;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 .route-rm-icon-box-image {
+    height: 100%;
+    align-self: center;
+    margin-top: 10px;
+    max-width: none;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 .route-rm-icon-box-title {
+    color: #242627;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 .route-rm-icon-box-text {
+    color: #000;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-text1 {
+    margin: 25px 0 15px;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 {
+    vertical-align: text-top;
+    width: 224px;
+    height: 295px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+    grid-row: modalCTop-s/modalCTop-e;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 .route-rm-icon-box-image {
+    height: 100%;
+    align-self: center;
+    margin-top: 10px;
+    max-width: none;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 .route-rm-icon-box-title {
+    color: #242627;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 .route-rm-icon-box-text {
+    color: #000;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 {
+    margin: 25px 0 15px;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 .route-rm-icon-box-image {
+    height: 253px;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 .route-rm-icon-box-title {
+    color: #242627;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 .route-rm-icon-box-text {
+    color: #000;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 {
+    vertical-align: text-top;
+    width: 224px;
+    height: 295px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+    grid-row: modalCTop-s/modalCTop-e;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 .route-rm-icon-box-image {
+    height: 100%;
+    align-self: center;
+    margin-top: 10px;
+    max-width: none;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 .route-rm-icon-box-title {
+    color: #242627;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 .route-rm-icon-box-text {
+    color: #000;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 {
+    margin: 25px 0 15px;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 .route-rm-icon-box-image {
+    height: 253px;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 .route-rm-icon-box-title {
+    color: #242627;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 .route-rm-icon-box-text {
+    color: #000;
+    font-size: 13px;
+  }
+  .route-modal .route-modal-box .route-modal-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 775px;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-1 {
+    width: 75%;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-1 .route-rm-terms {
+    font-size: 10px;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0 35px;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-copyright {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-terms-of-use {
+    margin: 5px 0;
+    z-index: 100;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-terms-of-use .route-rm-terms-of-use-text {
+    color: #67c8d9;
+    text-decoration: underline;
+    font-size: 11px;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-user-privacy {
+    z-index: 100;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-user-privacy .route-rm-user-privacy-text {
+    color: #67c8d9;
+    text-decoration: underline;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-lloyds-container {
+    margin: 5px 0;
+  }
+  .route-modal .route-modal-box .route-modal-footer .rm-footer-2 .route-rm-lloyds-container .route-rm-lloyds-image {
+    height: 26px;
+    width: 100px;
+  }
+  
+  .route-modal.rm-open {
+    display: block;
+  }
+  
+  #lup-view-detail {
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .route-modal.rm-open {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .route-modal .route-modal-box {
+      width: 90%;
+      max-height: 950px;
+    }
+    .route-modal .route-modal-box .background {
+      position: inherit;
+    }
+    .route-modal .route-modal-box .route-line {
+      margin-top: 50px;
+    }
+    .route-modal .route-modal-box .route-modal-header .route-rm-route-logo-color {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .route-modal .route-modal-box {
+      display: grid;
+      width: 315px;
+      align-items: center;
+      justify-content: center;
+    }
+    .route-modal .route-modal-box .background {
+      display: none;
+    }
+    .route-modal .route-modal-box .route-line {
+      margin-top: 65px;
+    }
+    .route-modal .route-modal-box .route-rm-close-modal {
+      width: 15px;
+    }
+    .route-modal .route-modal-box .route-modal-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 150px;
+      width: auto;
+      margin-top: 25px;
+    }
+    .route-modal .route-modal-box .route-modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 100%;
+      margin-top: 15px;
+    }
+    .route-modal .route-modal-box .route-modal-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 315px;
+    }
+    .route-modal .route-modal-box .route-modal-footer .rm-footer-1 {
+      margin-top: 50px;
+    }
+    .route-modal .route-modal-box .route-modal-footer .rm-footer-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .route-modal .route-modal-box .route-line {
+      margin-top: 50px;
+    }
+    .route-modal .route-modal-box .route-modal-header .route-rm-secure-with {
+      align-self: flex-start;
+      margin-left: 55px;
+      font-size: 16px;
+    }
+    .route-modal .route-modal-box .route-modal-header .route-rm-route-logo {
+      margin-left: 25px;
+    }
+    .route-modal .route-modal-box .route-modal-header .route-rm-route-logo-color {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .route-modal .route-modal-box .route-modal-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 100%;
+      margin-left: 30px;
+      align-items: start;
+    }
+    .route-modal .route-modal-box .route-rm-close-modal {
+      right: 50px;
+    }
+    .route-modal .route-modal-box .route-modal-content {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      margin: 0 0 30px;
+      font-size: 13px;
+    }
+    .route-modal .route-modal-box .route-modal-footer {
+      height: 100%;
+      padding-top: 150px;
+    }
+  }
+  @media screen and (min-width: 586px) and (max-width: 768px) {
+    .route-modal .route-modal-box .route-modal-header .route-rm-secure-with {
+      margin-top: 25px;
+      align-items: flex-start;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 .route-rm-icon-box-image {
+      height: 200px;
+      width: 100%;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 .route-rm-icon-box-image {
+      height: 200px;
+      width: 100%;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 .route-rm-icon-box-image {
+      height: 200px;
+      width: 100%;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 .route-rm-icon-box-image {
+      height: 200px;
+      width: 100%;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 .route-rm-icon-box-image {
+      height: 200px;
+      width: 100%;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-footer .rm-footer-2 {
+      display: flex;
+      flex-direction: column;
+      margin: 15px 0 15px;
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 585px) {
+    .route-modal .route-modal-box .route-modal-header .route-rm-secure-with {
+      margin-top: 10px;
+      font-size: 70%;
+      text-align: left;
+      margin-right: 30px;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 {
+      width: 120px;
+      height: 80%;
+      margin: 0px auto;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 {
+      width: 120px;
+      height: 80%;
+      margin: 0px auto;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 {
+      width: 120px;
+      height: 80%;
+      margin: 0px auto;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .route-modal .route-modal-box .route-modal-header .route-rm-secure-with {
+      color: #69727b;
+      order: 0;
+      padding: 0;
+    }
+    .route-modal .route-modal-box .route-modal-header .route-rm-route-logo {
+      display: none;
+      padding: 0;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 {
+      order: 1;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-text1 {
+      order: 0;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 {
+      order: 1;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 {
+      order: 0;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 {
+      order: 1;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 {
+      order: 0;
+    }
+  }
+  @media screen and (min-width: 561px) and (max-width: 768px) {
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 {
+      width: 160px;
+      height: auto;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 {
+      width: 160px;
+      height: auto;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 {
+      width: 160px;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 585px) {
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-icon-box1 .route-rm-icon-box-image {
+      width: 110px;
+      height: 150px;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box1 .route-rm-text1 {
+      font-size: 0.8em;
+      margin: 15px 0 25px;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-icon-box2 .route-rm-icon-box-image {
+      width: 110px;
+      height: 150px;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 {
+      font-size: 0.8em;
+      margin: 15px 0 25px;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box2 .route-rm-text2 .route-rm-icon-box-image {
+      width: 110px;
+      height: 150px;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-icon-box3 .route-rm-icon-box-image {
+      width: 110px;
+      height: 150px;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 {
+      font-size: 0.8em;
+      margin: 15px 0 25px;
+    }
+    .route-modal .route-modal-box .route-modal-content .icon-box3 .route-rm-text3 .route-rm-icon-box-image {
+      width: 110px;
+      height: 150px;
+      max-width: none;
+    }
+    .route-modal .route-modal-box .route-modal-footer .rm-footer-2 {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  .shipping-insurance-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: Roboto,Arial,Helvetica,sans-serif !important;
+  }
+  
+  .protection-plan-toggle input[type=checkbox]:focus {
+    outline: 1px solid #afafff !important;
+  }
+  
+  a#insurify-details-popup-link {
+    color: #476bef;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+  .protection-plan-details {
+    margin: 0 10px;
+  }
+  .protection-plan-details p {
+    line-height: 15px !important;
+  }
+  .protection-plan-details .protection-plan-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+  }
+  .protection-plan-details #insurify-protection-amount {
+    font-weight: 600;
+  }
+  .protection-plan-details .protection-plan-subtitle {
+    margin-bottom: 3px;
+    font-size: 12px;
+  }
+  
+  .checkout_toggle {
+    margin-top: 30px; 
+  }
+
+ .shipping-insurance-container.checkout_toggle .switch_checkbox_checkbox_input:checked::before {
+    content: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E) !important;
+}
